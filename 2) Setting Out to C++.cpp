@@ -13,6 +13,7 @@ int main()                                  //function header
 {                                           //Start of function body
     using namespace std;                    //Make definitions visible
     cout << "Come up and C++ some time.";   //Message
+                                        `   //Cout is the equivalent of Print, Console.Println, Console.Out.Prinln
     cout << endl;                           //Start a new line
     cout << "You won't regret it!" << endl; //More output
     return 0;                               //Terminate main()
