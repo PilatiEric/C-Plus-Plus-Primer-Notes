@@ -3,7 +3,7 @@
 
 
 //Prototype functions
-//NOTE: These are so the Main function can be maid aware of the existence of the function
+//NOTE: These are so the Main function can be made aware of the existence of the function
 //without having to put all the functions before the main.
 int OrangeThings();
 
