@@ -119,7 +119,8 @@ This implicit return ONLY works with main()
 
 //-----------------------------------------------C++ Statements-------------------------------------------------------
 
-
+//FOR ALL FUNCTIONS, THEY MUST BE CALLED IN THE MAIN AND WRITTEN EITHER BEFORE THE MAIN OR A PROTOTYPE FUNCTION
+//DECLARED BEFORE THE MAIN FOR IT TO WORK.
 
 int OrangeThings()
 {
