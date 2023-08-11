@@ -2,23 +2,28 @@
 //-------------------------------------------------------------Chapter 2: Setting Out to C++------------------------------------------------------------------------------
 
 
-
-
+//Prototype functions
+//NOTE: These are so the Main function can be maid aware of the existence of the function
+//without having to put all the functions before the main.
+int OrangeThings();
 
 //---------------------------------Features of the main() Function------------------------------------------------------
 
 // This function displays a message
 
-#include <iostream>                         //A PREPROCESSOR directive
+#include <iostream>                        //A PREPROCESSOR directive
 
-int main()                                  //function header (Takes in arguments)
-{                                           //Start of function body
-    using namespace std;                    //Make definitions visible
-    cout << "Come up and C++ some time.";   //Message
-    cout << endl;                           //Start a new line
-    cout << "You won't regret it!" << endl; //More output
-                                            //Terminate main(),
-                                            //End of function body
+int main()                                 //function header (Takes in arguments)
+{                                          //Start of function body
+   using namespace std;                    //Make definitions visible
+   cout << "Come up and C++ some time.";   //Message
+   cout << endl;                           //Start a new line
+   cout << "You won't regret it!" << endl; //More output
+                                           //Terminate main(),
+                                           //End of function body
+   OrangeThings();
+   return 0;                                            
+}                                            
 
 
 
@@ -27,7 +32,7 @@ int main()                                  //function header (Takes in argument
 //----------------------------------The Functions Header as an Interface------------------------------------------
 
 //The header can also be written as follows:
-int main(void);  
+//int main(void);  
 //The (void) is an explicit way of saying the function takes no arguments
 
 /*
@@ -97,14 +102,38 @@ This implicit return ONLY works with main()
 
 //---------The Newline Character-----------Subsection---------
 -The new line character (\n) creates a new line
+-Considered to be a single character called "newline" character
 -Example:
-*/
-   cout << "This is a \n thing.";
-/*
--Output:
-   -"This is a
-      thing."
-*/
+// */
+//    cout << "This is a \n thing.";
+// /*
+// -Output:
+//    -"This is a
+//       thing."
+// */
+//    return 0;
+// }
+
+
+
+
+//-----------------------------------------------C++ Statements-------------------------------------------------------
+
+
+
+int OrangeThings()
+{
+   using namespace std;
+
+   int carrots;                     //Declare an integer variable
+
+   carrots = 25;                    //Initialize the variable by adding a value
+   cout << "I have ";
+   cout << carrots;                 //Call the variable
+   cout << " carrots.";
+   cout << endl;
+   
+   carrots = carrots - 1;
+   cout << "Crunch, crunch. Now I have " << carrots << " carrots." << endl;
    return 0;
 }
-
