@@ -2,10 +2,11 @@
 //-------------------------------------------------------------Chapter 2: Setting Out to C++------------------------------------------------------------------------------
 
 
-//Prototype functions
+//Function Prototype
 //NOTE: These are so the Main function can be made aware of the existence of the function
 //without having to put all the functions before the main.
 int OrangeThings();
+int AssignmentStatements();
 
 //---------------------------------Features of the main() Function------------------------------------------------------
 
@@ -21,7 +22,7 @@ int main()                                 //function header (Takes in arguments
    cout << "You won't regret it!" << endl; //More output
                                            //Terminate main(),
                                            //End of function body
-   OrangeThings();
+   OrangeThings();                         //Calling another function
    return 0;                                            
 }                                            
 
@@ -138,3 +139,29 @@ int OrangeThings()
    cout << "Crunch, crunch. Now I have " << carrots << " carrots." << endl;
    return 0;
 }
+
+
+//-----------Assignment Statements---------Subsection--------------
+//Assigning (or initializing) variable is pretty much the same as in other languages
+
+int AssignmentStatements()
+{
+int steinway;
+int baldwin;
+int yamaha;
+steinway = 88;
+
+//A value can be assigned to multiple variables at the same time.
+baldwin = yamaha = 88;
+
+//Values can be modified
+steinway = steinway - 1;
+steinway -= 1;
+return 0;
+}
+
+
+
+//-------------------------------------------More C++ Statements---------------------------------------------------
+// Cin is the equivalent of Input()
+//It takes in a users input and can insert that into a variable for storage
