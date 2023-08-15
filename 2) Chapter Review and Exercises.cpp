@@ -3,7 +3,7 @@
 
 1) Functions
 2) Gives access to the iostream preprocessor
-3) Allows the use of the stf library
+3) Allows the use of the std library
 4) cout << "Hello, World" << endl;
 5) int cheeses;
 6) cheeses = 32;
