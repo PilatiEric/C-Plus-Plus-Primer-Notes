@@ -7,12 +7,19 @@
 //without having to put all the functions before the main.
 int OrangeThings();
 int AssignmentStatements();
+int MoreStatements();
+
+
+#include <iostream>
+#include <cmath>   
+
+using namespace std;        //Using this globally so I don't have to keep writing it for every single method
 
 //---------------------------------Features of the main() Function------------------------------------------------------
 
 // This function displays a message
 
-#include <iostream>                        //A PREPROCESSOR directive
+                     //A PREPROCESSOR directive
 
 int main()                                 //function header (Takes in arguments)
 {                                          //Start of function body
@@ -23,6 +30,7 @@ int main()                                 //function header (Takes in arguments
                                            //Terminate main(),
                                            //End of function body
    OrangeThings();                         //Calling another function
+   MoreStatements();
    return 0;                                            
 }                                            
 
@@ -163,5 +171,35 @@ return 0;
 
 
 //-------------------------------------------More C++ Statements---------------------------------------------------
-// Cin is the equivalent of Input()
+// cin is the equivalent of Input()
 //It takes in a users input and can insert that into a variable for storage
+
+int MoreStatements()
+{
+   using namespace std;
+
+   int carrots;
+
+   cout << "How many carrots do you have? ";
+   cin >> carrots;
+   cout << "Here's two more. ";
+   carrots += 2;
+   cout << "Now you have " << carrots << " carrots." << endl; //Concatenates everything together
+   return 0;
+}
+
+
+
+
+
+//-----------------------------------------------Functions------------------------------------------------------------
+
+//----------Using a Function that has a Return Value-----------------Subsection-------------
+
+int SquareRoot()
+{
+   float TheThing = sqrt(6.25);           //This is a function that calculates the square root of the number given
+                                          //You already knew this because HOW MANY LANGUAGES HAVE YOU ALREADY STUDIED?!
+   cout << TheThing;
+   return 0;
+}
