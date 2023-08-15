@@ -200,6 +200,11 @@ int SquareRoot()
 {
    float TheThing = sqrt(6.25);           //This is a function that calculates the square root of the number given
                                           //You already knew this because HOW MANY LANGUAGES HAVE YOU ALREADY STUDIED?!
+   double OtherThing = pow(5, 8);         //Takes the first number to the power of the second number
+   int AThing = rand();
    cout << TheThing;
+   cout << OtherThing;
+   cout << AThing;
    return 0;
 }
+
