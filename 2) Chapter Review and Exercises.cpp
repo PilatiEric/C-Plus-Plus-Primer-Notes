@@ -7,6 +7,8 @@
     int Furlongs();
     int TheMice();
     int TheyRun();
+    int AgeInMonths();
+    int CelsToFahr();
 
 
 //Main Method
@@ -16,6 +18,8 @@
         Furlongs();
         TheMice();
         TheyRun();
+        AgeInMonths();
+        CelsToFahr();
         return 0;
     }
 /*
@@ -75,3 +79,27 @@
         cout << "See how they run" << endl << endl;
         return 0;
     }
+//4)
+    int AgeInMonths()
+    {
+        int Age;
+        int Months;
+        cout << "Enter your age: ";
+        cin >> Age;
+        Months = Age * 12;
+        cout << "Your age in months is " << Months << "." << endl << endl;
+        return 0;
+    }
+//5)
+    int CelsToFahr()
+    {
+        double Fahrenheit;
+        double Celsius;
+        cout << "Please enter a celsius value: ";
+        cin >> Celsius;
+        Fahrenheit = (Celsius * 9 / 5) + 32;
+        cout << Celsius << " degrees Celsius is " << Fahrenheit << " degrees Fahrenheit" << endl << endl;
+        return 0;
+    }
+//6)
+    
