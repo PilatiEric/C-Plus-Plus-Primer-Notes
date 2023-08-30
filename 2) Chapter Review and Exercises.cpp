@@ -3,12 +3,14 @@
     using namespace std;
 
     //Function Prototypes
-    int NameAddress();
-    int Furlongs();
-    int TheMice();
-    int TheyRun();
-    int AgeInMonths();
-    int CelsToFahr();
+    void NameAddress();
+    void Furlongs();
+    void TheMice();
+    void TheyRun();
+    void AgeInMonths();
+    void CelsToFahr();
+    void LightToAU();
+    void Time();
 
 
 //Main Method
@@ -20,6 +22,8 @@
         TheyRun();
         AgeInMonths();
         CelsToFahr();
+        LightToAU();
+        Time();
         return 0;
     }
 /*
@@ -47,40 +51,36 @@
 //-----------------------Chapter 2 Exercises----------------------------
 
 //1)
-    int NameAddress()
+    void NameAddress()
     {
         cout << "My name is Princess Doughnut the Queen Anne Chonk" << endl;
         cout << "I live at 1234 Some Place Street Street Avenue Boulavard of Broken Dreams Circle Way" << endl << endl;
-        return 0;
     }
 
 //2)
-    int Furlongs()
+    void Furlongs()
     {
         int FurlongsDis;
         cout << "Please provide a distance in furlongs: ";
         cin >> FurlongsDis;
         FurlongsDis /= 220;
         cout << "That is a total of " << FurlongsDis << " yards." << endl << endl;
-        return 0;
     }
 
 //3)
-    int TheMice()
+    void TheMice()
     {
         cout << "Three blind mice" << endl;
         cout << "Three blind mice" << endl;
-        return 0;
     }
 
-    int TheyRun ()
+    void TheyRun ()
     {
         cout << "See how they run" << endl;
         cout << "See how they run" << endl << endl;
-        return 0;
     }
 //4)
-    int AgeInMonths()
+    void AgeInMonths()
     {
         int Age;
         int Months;
@@ -88,10 +88,9 @@
         cin >> Age;
         Months = Age * 12;
         cout << "Your age in months is " << Months << "." << endl << endl;
-        return 0;
     }
 //5)
-    int CelsToFahr()
+    void CelsToFahr()
     {
         double Fahrenheit;
         double Celsius;
@@ -99,7 +98,25 @@
         cin >> Celsius;
         Fahrenheit = (Celsius * 9 / 5) + 32;
         cout << Celsius << " degrees Celsius is " << Fahrenheit << " degrees Fahrenheit" << endl << endl;
-        return 0;
     }
 //6)
-    
+    void LightToAU()
+    {
+        double lightyears;
+        double AstroUnits;
+        cout << "Enter the number of lighyears: ";
+        cin >> lightyears;
+        AstroUnits = lightyears * 63240;
+        cout << lightyears << " light years = " << AstroUnits << " astronomical units." << endl << endl;
+    }
+//7)
+    void Time ()
+    {
+        int hours;
+        int minutes;
+        cout << "Enter the number of hours: ";
+        cin >> hours;
+        cout << "Enter the number of minutes: ";
+        cin >> minutes;
+        cout << "Time: " << hours << ":" << minutes << endl << endl;
+    }
