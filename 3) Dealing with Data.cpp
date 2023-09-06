@@ -21,7 +21,7 @@ int main()
 
 void TypeLimit()
 {
-    int n_int = INT_MAX;
+    int n_int = INT_MAX;                  //These all show the maximum number for the particular int type
     short n_short = SHRT_MAX;
     long n_long = LONG_MAX;
     long long n_llong = LONG_LONG_MAX;
